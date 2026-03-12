@@ -46,7 +46,7 @@ const serviceData: Record<string, ServiceData> = {
   "customer-list-building": {
     title: "Customer List Building & Management",
     meta: "Build and manage a permission-based customer list for your restaurant",
-    hero: "Your customer list is the most valuable marketing asset your restaurant can own. We build it, organize it, and keep it clean — so you can reach your guests whenever you want.",
+    hero: "Your customer list is the most valuable marketing asset your restaurant can own. We build it, organize it, and keep it clean - so you can reach your guests whenever you want.",
     whoFor: ["Restaurants with no existing customer database", "Owners who want to stop relying on third-party platforms", "Multi-location operators needing centralized lists"],
     problems: ["No way to contact past guests directly", "Relying on social media algorithms to reach customers", "Customer data scattered across multiple systems"],
     included: ["List setup and segmentation", "Ongoing data hygiene and deduplication", "Integration with email/SMS platforms", "Monthly list growth tracking", "GDPR/CAN-SPAM compliance guidance"],
