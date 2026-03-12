@@ -77,7 +77,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <label className="block text-sm font-semibold mb-2">Phone</label>
-                      <input type="tel" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="(555) 123-4567" />
+                      <input name="phone" type="tel" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="(331) 234-5060" />
                     </div>
                   </div>
                   <div>
