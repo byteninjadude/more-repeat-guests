@@ -6,6 +6,7 @@ const packages = [
   {
     name: "Starter",
     subtitle: "List Builder Launch",
+    price: "$500",
     features: [
       "Birthday Free Entrée offer setup",
       "Geo-targeted Facebook ad campaign",
@@ -18,6 +19,7 @@ const packages = [
   {
     name: "Growth",
     subtitle: "List Builder + Monthly Campaigns",
+    price: "$1,000",
     features: [
       "Everything in Starter",
       "Monthly email/SMS remarketing campaigns",
@@ -30,6 +32,7 @@ const packages = [
   {
     name: "Scale",
     subtitle: "Multi-Location + Advanced Retargeting",
+    price: "$1,500",
     features: [
       "Everything in Growth",
       "Multi-location campaign management",
@@ -81,7 +84,8 @@ const PricingSection = () => (
               </span>
             )}
             <h3 className={`font-display text-2xl mb-1 ${pkg.highlight ? "text-primary" : ""}`}>{pkg.name}</h3>
-            <p className={`text-sm mb-6 ${pkg.highlight ? "text-secondary-foreground/70" : "text-muted-foreground"}`}>{pkg.subtitle}</p>
+            <p className={`text-sm mb-2 ${pkg.highlight ? "text-secondary-foreground/70" : "text-muted-foreground"}`}>{pkg.subtitle}</p>
+            <p className={`font-display text-3xl mb-6 ${pkg.highlight ? "text-primary" : ""}`}>{pkg.price}<span className="text-base font-normal text-muted-foreground">/month</span></p>
             <ul className="space-y-3 mb-8">
               {pkg.features.map((f, j) => (
                 <li key={j} className={`flex gap-3 text-sm ${pkg.highlight ? "text-secondary-foreground" : ""}`}>
@@ -98,7 +102,7 @@ const PricingSection = () => (
                   : "border-2 border-primary text-primary hover:bg-primary/10"
               }`}
             >
-              Book a Strategy Call
+              Get Started
               <ArrowRight size={16} />
             </Link>
           </motion.div>

@@ -8,7 +8,7 @@ const services = [
     icon: Target,
     title: "Local Facebook Ads Management",
     slug: "local-facebook-ads",
-    desc: "Geo-targeted ads that reach hungry locals near your restaurant — not random clicks from across the country.",
+    desc: "Geo-targeted ads that reach hungry locals near your restaurant, not random clicks from across the country.",
   },
   {
     icon: Gift,
@@ -26,7 +26,7 @@ const services = [
     icon: Repeat,
     title: "Monthly Remarketing Campaigns",
     slug: "monthly-remarketing",
-    desc: "Email and SMS campaigns designed to bring birthday guests back at full price — month after month.",
+    desc: "Email and SMS campaigns designed to bring birthday guests back at full price, month after month.",
   },
   {
     icon: Shield,

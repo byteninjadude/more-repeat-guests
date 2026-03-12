@@ -22,7 +22,7 @@ const CTASection = () => (
         className="text-lg mb-10 max-w-2xl mx-auto"
         style={{ color: "hsl(40, 33%, 80%)" }}
       >
-        Join restaurants that are building a repeat customer list they own — powered by a genuine birthday offer and smart monthly follow-up.
+        Join restaurants that are building a repeat customer list they own, powered by a genuine birthday offer and smart monthly follow-up.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Heart, Eye, Handshake, Award } from "lucide-react";
 
 const values = [
-  { icon: Heart, title: "Hospitality First", desc: "We believe a birthday gift is hospitality — not discounting. We help you build genuine relationships with guests." },
+  { icon: Heart, title: "Hospitality First", desc: "We believe a birthday gift is hospitality, not discounting. We help you build genuine relationships with guests." },
   { icon: Eye, title: "Transparency Always", desc: "Clear reporting, honest expectations, and no hidden fees. You always know exactly what's working." },
   { icon: Handshake, title: "Simple Systems", desc: "If your staff can't handle it, we don't recommend it. Every process is designed for real-world restaurant operations." },
   { icon: Award, title: "Measurable Outcomes", desc: "We focus on signups, redemptions, and return visits — not likes, impressions, or vanity metrics." },
@@ -41,10 +41,10 @@ const About = () => (
         <h2 className="font-display text-3xl mb-6">Our Philosophy</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            Most restaurant marketing is backwards. It focuses on getting attention — likes, views, impressions — instead of building something lasting. We take a different approach.
+            Most restaurant marketing is backwards. It focuses on getting attention - likes, views, impressions - instead of building something lasting. We take a different approach.
           </p>
           <p>
-            <strong className="text-foreground">One great first visit → relationship → repeat visits.</strong> That's the formula. The Birthday Free Entrée is the catalyst that gets guests through the door. But the real magic happens after — when you can reach those guests directly, month after month, bringing them back at full price.
+            <strong className="text-foreground">One great first visit → relationship → repeat visits.</strong> That's the formula. The Birthday Free Entrée is the catalyst that gets guests through the door. But the real magic happens after, when you can reach those guests directly, month after month, bringing them back at full price.
           </p>
           <p>
             We specialize exclusively in restaurants. We understand the margins, the staffing challenges, the slow nights, and the seasonal swings. Everything we build is designed for the real world of restaurant operations.
@@ -88,7 +88,7 @@ const About = () => (
             </div>
             <div>
               <p className="text-3xl font-bold text-primary mb-2">Done-For-You</p>
-              <p className="text-sm text-secondary-foreground/70">Complete execution — we handle everything</p>
+              <p className="text-sm text-secondary-foreground/70">Complete execution - we handle everything</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary mb-2">100%</p>

@@ -3,16 +3,16 @@ import { Gift, Target, UserPlus, QrCode, ListChecks, Repeat } from "lucide-react
 
 const steps = [
   { icon: Gift, title: "Set Up Your Birthday Offer", desc: "We create your Birthday Free Entrée offer with clear redemption rules and staff instructions." },
-  { icon: Target, title: "Launch Geo-Targeted Ads", desc: "We run Facebook ads to people near your restaurant — only locals who are likely to visit." },
+  { icon: Target, title: "Launch Geo-Targeted Ads", desc: "We run Facebook ads to people near your restaurant, only locals who are likely to visit." },
   { icon: UserPlus, title: "Guests Opt In", desc: "Interested locals sign up to claim their birthday code or QR code. No spam, just genuine interest." },
   { icon: QrCode, title: "Redeem In-House", desc: "When the guest visits, your team checks the code. Simpler than processing a gift card." },
   { icon: ListChecks, title: "We Organize Your List", desc: "Every signup goes into your growing customer list — segmented, clean, and ready to use." },
-  { icon: Repeat, title: "Monthly Follow-Up Campaigns", desc: "We send email/SMS campaigns to bring guests back again and again — at full price." },
+  { icon: Repeat, title: "Monthly Follow-Up Campaigns", desc: "We send email/SMS campaigns to bring guests back again and again, at full price." },
 ];
 
 const requirements = [
   "Offer approval (we'll help you design it)",
-  "Basic brand assets — logo & photos (or we can help source them)",
+  "Basic brand assets, logo & photos (or we can help source them)",
   "Quick staff brief for code redemption",
   "Optional: POS note for tracking (we keep it simple)",
 ];
