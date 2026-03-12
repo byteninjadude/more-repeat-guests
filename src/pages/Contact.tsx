@@ -98,9 +98,10 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl disabled:opacity-50"
                   >
-                    Click here to get more repeat customers every month
+                    {isSubmitting ? "Sending..." : "Click here to get more repeat customers every month"}
                   </button>
                 </form>
               )}
