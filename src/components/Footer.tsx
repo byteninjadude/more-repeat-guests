@@ -50,7 +50,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-secondary-foreground/10 mt-12 pt-8 text-center text-sm text-secondary-foreground/50">
-        © {new Date().getFullYear()} BirthdayListPro. All rights reserved.
+        © {new Date().getFullYear()} The Birthday Club. All rights reserved.
       </div>
     </div>
   </footer>

@@ -32,7 +32,7 @@ const packages = [
   {
     name: "Scale",
     subtitle: "Multi-Location + Advanced Retargeting",
-    price: "$1,500",
+    price: "$1,497",
     features: [
       "Everything in Growth",
       "Multi-location campaign management",

@@ -30,7 +30,7 @@ const About = () => (
           className="text-lg leading-relaxed"
           style={{ color: "hsl(40, 33%, 80%)" }}
         >
-          BirthdayListPro exists for one reason: to help restaurant owners stop gambling on unpredictable marketing and start building a customer list that drives repeat visits on demand.
+          The Birthday Club exists for one reason: to help restaurant owners stop gambling on unpredictable marketing and start building a customer list that drives repeat visits on demand.
         </motion.p>
       </div>
     </section>
