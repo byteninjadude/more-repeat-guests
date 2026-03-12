@@ -1,62 +1,30 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Users, CalendarCheck, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-
-const caseStudies = [
-  {
-    name: "Local Grill House",
-    icon: TrendingUp,
-    stat: "427",
-    label: "Birthday signups in 60 days",
-    detail: "Filled Tuesday nights with monthly offers sent to their growing list. Average party size: 3.2 guests per birthday visit.",
-  },
-  {
-    name: "Family Italian Spot",
-    icon: Users,
-    stat: "312",
-    label: "New contacts collected",
-    detail: "18% returned within 45 days for a full-price visit. Monthly email campaigns now drive consistent mid-week traffic.",
-  },
-  {
-    name: "Neighborhood Diner",
-    icon: CalendarCheck,
-    stat: "89%",
-    label: "Consistent monthly list growth",
-    detail: "Measurable repeat visits tracked through redemption codes. Owner reports 'best marketing investment we've ever made.'",
-  },
-];
-
-const testimonials = [
-  {
-    quote: "Finally, something that brings people in AND gives me a list I can text and email later. Game changer.",
-    name: "Mike R.",
-    role: "Owner, Smoky Joe's BBQ",
-  },
-  {
-    quote: "We used to boost posts and pray. Now we can actually reach our customers whenever we need to fill seats.",
-    name: "Sarah L.",
-    role: "GM, Bella Cucina",
-  },
-  {
-    quote: "I was skeptical about giving away free entrées. But the return visits more than make up for it, and my staff loves the birthday energy.",
-    name: "James T.",
-    role: "Owner, The Copper Pan",
-  },
-  {
-    quote: "In 90 days we had over 500 people on our list. Our slow Mondays aren't slow anymore.",
-    name: "Linda K.",
-    role: "Owner, Main Street Diner",
-  },
-];
+import { ArrowRight } from "lucide-react";
 
 const ProofSection = () => {
-  const [testimonialIdx, setTestimonialIdx] = useState(0);
+  const [spend, setSpend] = useState(35);
+  const [party, setParty] = useState(4);
+  const [visits, setVisits] = useState(30);
 
-  const next = () => setTestimonialIdx((i) => (i + 1) % testimonials.length);
-  const prev = () => setTestimonialIdx((i) => (i - 1 + testimonials.length) % testimonials.length);
+  const entreeCost = 10;
+  const serviceCost = 497;
+  const adSpend = 300;
+  const investment = serviceCost + adSpend;
+
+  const revenue = visits * party * spend;
+  const totalEntreeCost = visits * entreeCost;
+  const netProfit = revenue - totalEntreeCost - investment;
+  const annualRevenue = revenue * 12;
+  const roi = (revenue / investment).toFixed(1);
+
+  const fmt = (n: number) => "$" + Math.round(Math.abs(n)).toLocaleString("en-US");
+
+  const pct = (val: number, min: number, max: number) =>
+    ((val - min) / (max - min)) * 100;
 
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section id="calculator" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +32,7 @@ const ProofSection = () => {
           viewport={{ once: true }}
           className="font-display text-3xl md:text-4xl lg:text-5xl text-center mb-4"
         >
-          Real Results for Real Restaurants
+          See What The Birthday Club Could Do for Your Restaurant
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -72,68 +40,157 @@ const ProofSection = () => {
           viewport={{ once: true }}
           className="text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto"
         >
-          Here's what happens when restaurants stop guessing and start building a customer list.
+          Drag the sliders to match your restaurant. Watch the math work in your favor.
         </motion.p>
 
-        {/* Case Studies */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20">
-          {caseStudies.map((cs, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-secondary rounded-xl p-8 text-center"
-            >
-              <cs.icon className="w-10 h-10 text-primary mx-auto mb-4" />
-              <h3 className="font-display text-lg text-secondary-foreground mb-2">{cs.name}</h3>
-              <p className="text-4xl font-bold text-primary mb-1">{cs.stat}</p>
-              <p className="text-sm text-primary/80 font-semibold mb-4">{cs.label}</p>
-              <p className="text-sm text-secondary-foreground/70 leading-relaxed">{cs.detail}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Testimonial Carousel */}
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-card rounded-xl p-8 md:p-12 border border-border relative">
-            <div className="flex justify-center gap-1 mb-6">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-              ))}
-            </div>
-            <motion.blockquote
-              key={testimonialIdx}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="text-lg md:text-xl text-center font-display leading-relaxed mb-6"
-            >
-              "{testimonials[testimonialIdx].quote}"
-            </motion.blockquote>
-            <p className="text-center font-semibold">{testimonials[testimonialIdx].name}</p>
-            <p className="text-center text-sm text-muted-foreground">{testimonials[testimonialIdx].role}</p>
-
-            <div className="flex justify-center gap-4 mt-8">
-              <button onClick={prev} className="p-2 rounded-full border border-border hover:border-primary transition-colors" aria-label="Previous testimonial">
-                <ChevronLeft size={20} />
-              </button>
-              <div className="flex items-center gap-2">
-                {testimonials.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setTestimonialIdx(i)}
-                    className={`w-2 h-2 rounded-full transition-colors ${i === testimonialIdx ? "bg-primary" : "bg-border"}`}
-                    aria-label={`Go to testimonial ${i + 1}`}
-                  />
-                ))}
+        <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          {/* Sliders Column */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col gap-10 justify-center"
+          >
+            {/* Slider 1 */}
+            <div>
+              <div className="flex justify-between items-baseline mb-3">
+                <span className="text-sm font-semibold text-foreground">Average Spend Per Guest</span>
+                <span className="text-xl font-bold text-primary font-display">${spend}</span>
               </div>
-              <button onClick={next} className="p-2 rounded-full border border-border hover:border-primary transition-colors" aria-label="Next testimonial">
-                <ChevronRight size={20} />
-              </button>
+              <input
+                type="range"
+                min={20}
+                max={80}
+                step={5}
+                value={spend}
+                onChange={(e) => setSpend(Number(e.target.value))}
+                className="w-full h-2 rounded-full appearance-none cursor-pointer accent-primary"
+                style={{
+                  background: `linear-gradient(to right, hsl(var(--primary)) 0%, hsl(var(--primary)) ${pct(spend, 20, 80)}%, hsl(var(--border)) ${pct(spend, 20, 80)}%, hsl(var(--border)) 100%)`,
+                }}
+              />
             </div>
-          </div>
+
+            {/* Slider 2 */}
+            <div>
+              <div className="flex justify-between items-baseline mb-3">
+                <span className="text-sm font-semibold text-foreground">Average Birthday Party Size</span>
+                <span className="text-xl font-bold text-primary font-display">{party} guests</span>
+              </div>
+              <input
+                type="range"
+                min={2}
+                max={8}
+                step={1}
+                value={party}
+                onChange={(e) => setParty(Number(e.target.value))}
+                className="w-full h-2 rounded-full appearance-none cursor-pointer accent-primary"
+                style={{
+                  background: `linear-gradient(to right, hsl(var(--primary)) 0%, hsl(var(--primary)) ${pct(party, 2, 8)}%, hsl(var(--border)) ${pct(party, 2, 8)}%, hsl(var(--border)) 100%)`,
+                }}
+              />
+            </div>
+
+            {/* Slider 3 */}
+            <div>
+              <div className="flex justify-between items-baseline mb-3">
+                <span className="text-sm font-semibold text-foreground">Expected Birthday Visits Per Month</span>
+                <span className="text-xl font-bold text-primary font-display">{visits} visits</span>
+              </div>
+              <input
+                type="range"
+                min={10}
+                max={80}
+                step={5}
+                value={visits}
+                onChange={(e) => setVisits(Number(e.target.value))}
+                className="w-full h-2 rounded-full appearance-none cursor-pointer accent-primary"
+                style={{
+                  background: `linear-gradient(to right, hsl(var(--primary)) 0%, hsl(var(--primary)) ${pct(visits, 10, 80)}%, hsl(var(--border)) ${pct(visits, 10, 80)}%, hsl(var(--border)) 100%)`,
+                }}
+              />
+              <p className="text-xs text-muted-foreground mt-2">
+                Most restaurants on our system see 25-50 birthday visits per month
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Results Column */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-secondary rounded-xl p-8 md:p-10"
+          >
+            <div className="space-y-5">
+              {/* Revenue */}
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-secondary-foreground">Monthly Revenue from Birthday Tables</span>
+                <span className="text-2xl md:text-3xl font-bold text-primary font-display">{fmt(revenue)}</span>
+              </div>
+
+              {/* Entree cost */}
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-secondary-foreground/60">Cost of Free Birthday Entrees</span>
+                <span className="text-base text-secondary-foreground/60">- {fmt(totalEntreeCost)}</span>
+              </div>
+
+              {/* Investment */}
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-secondary-foreground/60">Your Monthly Investment (${serviceCost} service + ${adSpend} ads)</span>
+                <span className="text-base text-secondary-foreground/60">- {fmt(investment)}</span>
+              </div>
+
+              <div className="border-t border-secondary-foreground/10 my-2" />
+
+              {/* Net profit */}
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm font-semibold text-secondary-foreground">Your Net Monthly Profit</span>
+                <span className={`text-2xl md:text-3xl font-bold font-display ${netProfit >= 0 ? "text-primary" : "text-red-400"}`}>
+                  {netProfit >= 0 ? fmt(netProfit) : `-${fmt(netProfit)}`}/mo
+                </span>
+              </div>
+
+              {/* Stat boxes */}
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                <div className="bg-secondary-foreground/5 rounded-lg p-4 text-center">
+                  <p className="text-xl md:text-2xl font-bold text-primary font-display">{fmt(annualRevenue)}</p>
+                  <p className="text-xs text-secondary-foreground/50 mt-1">Annual Revenue</p>
+                </div>
+                <div className="bg-secondary-foreground/5 rounded-lg p-4 text-center">
+                  <p className="text-xl md:text-2xl font-bold text-primary font-display">{roi}x</p>
+                  <p className="text-xs text-secondary-foreground/50 mt-1">Return on Investment</p>
+                </div>
+              </div>
+
+              {/* Warning for negative */}
+              {netProfit < 0 && (
+                <p className="text-xs text-red-400 text-center mt-4 leading-relaxed">
+                  At this volume, we'd recommend a lighter launch to build momentum before scaling.
+                </p>
+              )}
+            </div>
+          </motion.div>
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity"
+          >
+            Get These Results for Your Restaurant
+            <ArrowRight size={20} />
+          </a>
+          <p className="text-xs text-muted-foreground mt-4 max-w-lg mx-auto leading-relaxed">
+            Estimates based on average performance. Actual results vary by location, offer, and market. Ad spend is paid separately to Facebook and is not included in service pricing.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
