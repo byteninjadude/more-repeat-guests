@@ -84,7 +84,8 @@ const PricingSection = () => (
               </span>
             )}
             <h3 className={`font-display text-2xl mb-1 ${pkg.highlight ? "text-primary" : ""}`}>{pkg.name}</h3>
-            <p className={`text-sm mb-6 ${pkg.highlight ? "text-secondary-foreground/70" : "text-muted-foreground"}`}>{pkg.subtitle}</p>
+            <p className={`text-sm mb-2 ${pkg.highlight ? "text-secondary-foreground/70" : "text-muted-foreground"}`}>{pkg.subtitle}</p>
+            <p className={`font-display text-3xl mb-6 ${pkg.highlight ? "text-primary" : ""}`}>{pkg.price}<span className="text-base font-normal text-muted-foreground">/month</span></p>
             <ul className="space-y-3 mb-8">
               {pkg.features.map((f, j) => (
                 <li key={j} className={`flex gap-3 text-sm ${pkg.highlight ? "text-secondary-foreground" : ""}`}>
