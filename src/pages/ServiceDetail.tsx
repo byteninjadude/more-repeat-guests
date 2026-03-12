@@ -26,7 +26,7 @@ const serviceData: Record<string, ServiceData> = {
     outcomes: ["More local diners discovering your restaurant", "Lower cost per lead than traditional advertising", "A steady flow of birthday offer signups"],
     faqs: [
       { q: "What ad budget do I need?", a: "Most restaurants start with $300-$800/month. We'll recommend the right budget for your market during our strategy call." },
-      { q: "How is this different from boosting posts?", a: "Boosted posts optimize for engagement (likes, comments). We optimize for signups — real people who give you their info and visit your restaurant." },
+      { q: "How is this different from boosting posts?", a: "Boosted posts optimize for engagement (likes, comments). We optimize for signups - real people who give you their info and visit your restaurant." },
       { q: "Do I need a Facebook page?", a: "Yes, but it doesn't need to be fancy. We can help you set one up if needed." },
     ],
   },
