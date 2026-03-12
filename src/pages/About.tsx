@@ -41,7 +41,7 @@ const About = () => (
         <h2 className="font-display text-3xl mb-6">Our Philosophy</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            Most restaurant marketing is backwards. It focuses on getting attention — likes, views, impressions — instead of building something lasting. We take a different approach.
+            Most restaurant marketing is backwards. It focuses on getting attention - likes, views, impressions - instead of building something lasting. We take a different approach.
           </p>
           <p>
             <strong className="text-foreground">One great first visit → relationship → repeat visits.</strong> That's the formula. The Birthday Free Entrée is the catalyst that gets guests through the door. But the real magic happens after, when you can reach those guests directly, month after month, bringing them back at full price.
