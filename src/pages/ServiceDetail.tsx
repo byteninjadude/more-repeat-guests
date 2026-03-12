@@ -39,7 +39,7 @@ const serviceData: Record<string, ServiceData> = {
     included: ["Custom landing page for birthday signups", "Automated code/QR code generation and delivery", "Email/SMS confirmation sequences", "Staff redemption guide", "Mobile-optimized experience"],
     outcomes: ["Automated lead capture running 24/7", "Professional first impression before guests even visit", "A growing database of verified birthday contacts"],
     faqs: [
-      { q: "How do guests receive their codes?", a: "Via email and/or SMS — whichever you prefer. We set up automated delivery so it happens instantly." },
+      { q: "How do guests receive their codes?", a: "Via email and/or SMS, whichever you prefer. We set up automated delivery so it happens instantly." },
       { q: "Can guests share codes with friends?", a: "Codes are unique and tied to individual signups. Your staff verifies at redemption." },
     ],
   },
