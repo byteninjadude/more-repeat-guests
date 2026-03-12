@@ -6,7 +6,7 @@ const packages = [
   {
     name: "Starter",
     subtitle: "List Builder Launch",
-    price: "$500",
+    price: "$497",
     features: [
       "Birthday Free Entrée offer setup",
       "Geo-targeted Facebook ad campaign",
