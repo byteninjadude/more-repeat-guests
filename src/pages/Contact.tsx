@@ -126,7 +126,7 @@ const Contact = () => {
                   <Phone className="w-5 h-5 text-primary shrink-0" />
                   <div>
                     <p className="text-sm font-semibold">Call Us</p>
-                    <p className="text-sm text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-sm text-muted-foreground">(331) 234-5060</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
