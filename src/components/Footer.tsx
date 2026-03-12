@@ -14,7 +14,7 @@ const Footer = () => (
     <div className="container mx-auto px-4 lg:px-8 py-16">
       <div className="grid md:grid-cols-4 gap-10">
         <div>
-          <h3 className="font-display text-xl text-primary mb-4">BirthdayListPro</h3>
+          <h3 className="font-display text-xl text-primary mb-4">The Birthday Club</h3>
           <p className="text-sm text-secondary-foreground/70 leading-relaxed">
             We help restaurant owners build a growing list of repeat customers using a Birthday Free Entrée offer and monthly follow-up campaigns.
           </p>
@@ -50,7 +50,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-secondary-foreground/10 mt-12 pt-8 text-center text-sm text-secondary-foreground/50">
-        © {new Date().getFullYear()} BirthdayListPro. All rights reserved.
+        © {new Date().getFullYear()} The Birthday Club. All rights reserved.
       </div>
     </div>
   </footer>

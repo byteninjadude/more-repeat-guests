@@ -6,7 +6,7 @@ const packages = [
   {
     name: "Starter",
     subtitle: "List Builder Launch",
-    price: "$500",
+    price: "$497",
     features: [
       "Birthday Free Entrée offer setup",
       "Geo-targeted Facebook ad campaign",
@@ -19,7 +19,7 @@ const packages = [
   {
     name: "Growth",
     subtitle: "List Builder + Monthly Campaigns",
-    price: "$1,000",
+    price: "$997",
     features: [
       "Everything in Starter",
       "Monthly email/SMS remarketing campaigns",
@@ -32,7 +32,7 @@ const packages = [
   {
     name: "Scale",
     subtitle: "Multi-Location + Advanced Retargeting",
-    price: "$1,500",
+    price: "$1,497",
     features: [
       "Everything in Growth",
       "Multi-location campaign management",
