@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Heart, Eye, Handshake, Award } from "lucide-react";
 
 const values = [
-  { icon: Heart, title: "Hospitality First", desc: "We believe a birthday gift is hospitality — not discounting. We help you build genuine relationships with guests." },
+  { icon: Heart, title: "Hospitality First", desc: "We believe a birthday gift is hospitality, not discounting. We help you build genuine relationships with guests." },
   { icon: Eye, title: "Transparency Always", desc: "Clear reporting, honest expectations, and no hidden fees. You always know exactly what's working." },
   { icon: Handshake, title: "Simple Systems", desc: "If your staff can't handle it, we don't recommend it. Every process is designed for real-world restaurant operations." },
   { icon: Award, title: "Measurable Outcomes", desc: "We focus on signups, redemptions, and return visits — not likes, impressions, or vanity metrics." },
