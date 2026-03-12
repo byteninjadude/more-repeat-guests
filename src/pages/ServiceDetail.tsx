@@ -59,7 +59,7 @@ const serviceData: Record<string, ServiceData> = {
   "monthly-remarketing": {
     title: "Monthly Remarketing Campaigns",
     meta: "Email and SMS campaigns that bring restaurant guests back at full price",
-    hero: "The birthday offer gets them in the door. Monthly remarketing brings them back — at full price, with their friends, on your slow nights.",
+    hero: "The birthday offer gets them in the door. Monthly remarketing brings them back - at full price, with their friends, on your slow nights.",
     whoFor: ["Restaurants with an existing or growing customer list", "Owners who want predictable weekly traffic", "Anyone tired of 'post and pray' marketing"],
     problems: ["No system for following up with past guests", "Inconsistent messaging that doesn't drive action", "Slow nights with no way to fill seats on demand"],
     included: ["Monthly email campaign creation and sending", "SMS campaign management", "Seasonal and holiday promotions", "Slow-night special offers", "Open rate and conversion tracking"],
