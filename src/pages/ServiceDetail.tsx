@@ -65,7 +65,7 @@ const serviceData: Record<string, ServiceData> = {
     included: ["Monthly email campaign creation and sending", "SMS campaign management", "Seasonal and holiday promotions", "Slow-night special offers", "Open rate and conversion tracking"],
     outcomes: ["Predictable repeat visits from past guests", "Higher revenue on traditionally slow nights", "Guests returning at full price, not with discounts"],
     faqs: [
-      { q: "How often will you contact our guests?", a: "Typically 2-4 times per month. We balance frequency with value — no one gets spammed." },
+      { q: "How often will you contact our guests?", a: "Typically 2-4 times per month. We balance frequency with value - no one gets spammed." },
       { q: "What kind of offers work best?", a: "It varies, but we've seen great results with 'come back this week' incentives, seasonal menus, and VIP early access to specials." },
     ],
   },
