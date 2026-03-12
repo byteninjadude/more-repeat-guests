@@ -72,7 +72,7 @@ const serviceData: Record<string, ServiceData> = {
   "offer-strategy": {
     title: "Offer Strategy & Redemption Guardrails",
     meta: "Smart birthday offer rules that protect your restaurant brand and margins",
-    hero: "A free birthday entrée sounds generous — because it is. But smart guardrails prevent abuse, protect your margins, and ensure every redemption drives long-term value.",
+    hero: "A free birthday entrée sounds generous - because it is. But smart guardrails prevent abuse, protect your margins, and ensure every redemption drives long-term value.",
     whoFor: ["Restaurant owners worried about offer abuse", "Operators who need clear staff guidelines", "Anyone who's been burned by coupon campaigns"],
     problems: ["Fear of attracting freeloaders", "No clear rules for staff to follow", "Past promotions that attracted deal-seekers who never returned"],
     included: ["Custom offer terms and conditions", "Redemption rules and expiration policies", "Staff training materials", "Abuse prevention protocols", "Brand-aligned messaging guidelines"],
