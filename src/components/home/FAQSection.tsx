@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "What ad budget is recommended?",
-    a: "Most restaurants start with $300–$800/month in ad spend (separate from our management fee). We'll recommend the right budget based on your area and goals during our strategy call.",
+    a: "Most restaurants start with $300-$800/month in ad spend (separate from our management fee). We'll recommend the right budget based on your area and goals during our strategy call.",
   },
   {
     q: "How quickly can we launch?",
