@@ -33,7 +33,7 @@ const serviceData: Record<string, ServiceData> = {
   "birthday-offer-funnel": {
     title: "Birthday Offer Funnel Setup",
     meta: "Complete birthday signup and code delivery system for restaurants",
-    hero: "We build the entire funnel — from ad click to birthday code delivery. Guests opt in, receive their code, and visit your restaurant. Simple for them, simple for your staff.",
+    hero: "We build the entire funnel, from ad click to birthday code delivery. Guests opt in, receive their code, and visit your restaurant. Simple for them, simple for your staff.",
     whoFor: ["Restaurants wanting a proven first-visit incentive", "Owners who want automated lead capture", "Teams needing a hands-off signup system"],
     problems: ["No system to capture guest information before they visit", "Manual processes that fall apart when staff gets busy", "No way to deliver offers consistently"],
     included: ["Custom landing page for birthday signups", "Automated code/QR code generation and delivery", "Email/SMS confirmation sequences", "Staff redemption guide", "Mobile-optimized experience"],
