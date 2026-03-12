@@ -8,7 +8,7 @@ const services = [
     icon: Target,
     title: "Local Facebook Ads Management",
     slug: "local-facebook-ads",
-    desc: "Geo-targeted ads that reach hungry locals near your restaurant — not random clicks from across the country.",
+    desc: "Geo-targeted ads that reach hungry locals near your restaurant, not random clicks from across the country.",
   },
   {
     icon: Gift,
