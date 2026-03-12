@@ -45,7 +45,7 @@ const HeroSection = () => (
           <p>✓ We give them a free birthday entrée, no strings attached</p>
           <p>✓ They sign up to receive a redeemable code or QR code</p>
           <p>✓ Your team redeems it when they visit</p>
-          <p>✓ You market to that growing list monthly — bringing them back at full price</p>
+          <p>✓ You market to that growing list monthly, bringing them back at full price</p>
         </motion.div>
 
         <motion.div

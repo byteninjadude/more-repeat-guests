@@ -26,7 +26,7 @@ const services = [
     icon: Repeat,
     title: "Monthly Remarketing Campaigns",
     slug: "monthly-remarketing",
-    desc: "Email and SMS campaigns designed to bring birthday guests back at full price — month after month.",
+    desc: "Email and SMS campaigns designed to bring birthday guests back at full price, month after month.",
   },
   {
     icon: Shield,

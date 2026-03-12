@@ -85,7 +85,7 @@ const serviceData: Record<string, ServiceData> = {
   "tracking-reporting": {
     title: "Tracking & Reporting",
     meta: "Restaurant marketing analytics: redemptions, list growth, and return visits",
-    hero: "No more guessing if your marketing is working. We track every signup, every redemption, and every return visit — then give you a clear monthly report.",
+    hero: "No more guessing if your marketing is working. We track every signup, every redemption, and every return visit - then give you a clear monthly report.",
     whoFor: ["Data-driven restaurant operators", "Owners who want proof their investment is working", "Multi-location managers needing consolidated reporting"],
     problems: ["No visibility into marketing ROI", "Relying on gut feeling instead of data", "Can't tell which customers came from ads vs. walk-ins"],
     included: ["Monthly performance dashboard", "Signup and redemption tracking", "Return visit attribution", "List growth analytics", "Quarterly strategy review"],

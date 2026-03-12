@@ -88,7 +88,7 @@ const About = () => (
             </div>
             <div>
               <p className="text-3xl font-bold text-primary mb-2">Done-For-You</p>
-              <p className="text-sm text-secondary-foreground/70">Complete execution — we handle everything</p>
+              <p className="text-sm text-secondary-foreground/70">Complete execution - we handle everything</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-primary mb-2">100%</p>

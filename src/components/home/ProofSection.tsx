@@ -38,7 +38,7 @@ const testimonials = [
     role: "GM, Bella Cucina",
   },
   {
-    quote: "I was skeptical about giving away free entrées. But the return visits more than make up for it — and my staff loves the birthday energy.",
+    quote: "I was skeptical about giving away free entrées. But the return visits more than make up for it, and my staff loves the birthday energy.",
     name: "James T.",
     role: "Owner, The Copper Pan",
   },

@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "How quickly can we launch?",
-    a: "Most restaurants are live within 7–10 business days from kickoff. We handle the setup — you just approve the offer and provide basic brand assets.",
+    a: "Most restaurants are live within 7-10 business days from kickoff. We handle the setup - you just approve the offer and provide basic brand assets.",
   },
 ];
 

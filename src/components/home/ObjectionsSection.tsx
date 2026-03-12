@@ -25,7 +25,7 @@ const objections = [
   {
     icon: Smartphone,
     question: '"Do I need new tech or complicated systems?"',
-    answer: "No new hardware or software. We handle everything. Your staff just checks a code — it's simpler than processing a gift card.",
+    answer: "No new hardware or software. We handle everything. Your staff just checks a code - it's simpler than processing a gift card.",
   },
   {
     icon: Zap,

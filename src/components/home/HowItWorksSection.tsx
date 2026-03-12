@@ -12,7 +12,7 @@ const steps = [
 
 const requirements = [
   "Offer approval (we'll help you design it)",
-  "Basic brand assets — logo & photos (or we can help source them)",
+  "Basic brand assets, logo & photos (or we can help source them)",
   "Quick staff brief for code redemption",
   "Optional: POS note for tracking (we keep it simple)",
 ];
