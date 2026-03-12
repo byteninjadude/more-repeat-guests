@@ -7,7 +7,7 @@ const steps = [
   { icon: UserPlus, title: "Guests Opt In", desc: "Interested locals sign up to claim their birthday code or QR code. No spam, just genuine interest." },
   { icon: QrCode, title: "Redeem In-House", desc: "When the guest visits, your team checks the code. Simpler than processing a gift card." },
   { icon: ListChecks, title: "We Organize Your List", desc: "Every signup goes into your growing customer list — segmented, clean, and ready to use." },
-  { icon: Repeat, title: "Monthly Follow-Up Campaigns", desc: "We send email/SMS campaigns to bring guests back again and again — at full price." },
+  { icon: Repeat, title: "Monthly Follow-Up Campaigns", desc: "We send email/SMS campaigns to bring guests back again and again, at full price." },
 ];
 
 const requirements = [
