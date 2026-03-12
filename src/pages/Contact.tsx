@@ -73,7 +73,7 @@ const Contact = () => {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-semibold mb-2">Email *</label>
-                      <input required type="email" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="john@restaurant.com" />
+                      <input required name="email" type="email" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="john@restaurant.com" />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold mb-2">Phone</label>
