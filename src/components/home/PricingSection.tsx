@@ -19,7 +19,7 @@ const packages = [
   {
     name: "Growth",
     subtitle: "List Builder + Monthly Campaigns",
-    price: "$1,000",
+    price: "$997",
     features: [
       "Everything in Starter",
       "Monthly email/SMS remarketing campaigns",
