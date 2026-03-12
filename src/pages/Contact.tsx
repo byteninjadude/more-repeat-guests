@@ -63,7 +63,7 @@ const Contact = () => {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-semibold mb-2">Your Name *</label>
-                      <input required type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="John Smith" />
+                      <input required name="name" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="John Smith" />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold mb-2">Restaurant Name *</label>
