@@ -1,41 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 40 33% 97%;
     --foreground: 220 20% 12%;
-
     --card: 40 25% 95%;
     --card-foreground: 220 20% 12%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 12%;
-
     --primary: 38 92% 45%;
     --primary-foreground: 0 0% 100%;
-
     --secondary: 220 14% 18%;
     --secondary-foreground: 40 33% 97%;
-
     --muted: 35 20% 91%;
     --muted-foreground: 220 10% 44%;
-
     --accent: 0 65% 48%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 35 18% 86%;
     --input: 35 18% 86%;
     --ring: 38 92% 45%;
-
     --radius: 0.75rem;
-
     --sidebar-background: 220 14% 18%;
     --sidebar-foreground: 40 33% 97%;
     --sidebar-primary: 38 92% 45%;
@@ -44,15 +32,12 @@
     --sidebar-accent-foreground: 40 33% 97%;
     --sidebar-border: 220 14% 24%;
     --sidebar-ring: 38 92% 45%;
-
     --hero-gradient: linear-gradient(135deg, hsl(220 14% 10%) 0%, hsl(220 20% 16%) 50%, hsl(38 40% 18%) 100%);
     --amber-glow: 0 0 60px hsl(38 92% 45% / 0.15);
     --section-alt: 35 25% 94%;
-
     --font-display: 'DM Serif Display', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
   }
-
   .dark {
     --background: 220 20% 8%;
     --foreground: 40 33% 97%;
@@ -75,51 +60,41 @@
     --ring: 38 92% 50%;
   }
 }
-
 @layer base {
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
   }
-
   h1, h2, h3, h4 {
     font-family: var(--font-display);
   }
 }
-
 @layer utilities {
   .hero-gradient {
     background: var(--hero-gradient);
   }
-
   .text-gradient-amber {
     background: linear-gradient(135deg, hsl(38 92% 55%), hsl(32 90% 45%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
   .section-alt {
     background-color: hsl(var(--section-alt));
   }
-
   .amber-glow {
     box-shadow: var(--amber-glow);
   }
-
   .animate-fade-up {
     animation: fadeUp 0.6s ease-out forwards;
   }
-
   .animate-fade-in {
     animation: fadeIn 0.5s ease-out forwards;
   }
 }
-
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -130,8 +105,24 @@
     transform: translateY(0);
   }
 }
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Hide Lovable badge */
+[aria-label*="Lovable"],
+a[href*="lovable.dev/projects"],
+[data-testid*="lovable"],
+img[alt*="Lovable"],
+div[class*="lovable-badge"],
+a[href*="lovable.dev"]:has(img) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
