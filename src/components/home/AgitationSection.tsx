@@ -12,7 +12,7 @@ const oldWay = [
 
 const newWay = [
   "A permission-based customer list that grows every month",
-  "Activate your list whenever you need traffic — especially slow nights",
+  "Activate your list whenever you need traffic, especially slow nights",
   "No discount machine — guests come back at full price",
   "The birthday entrée is the first-visit catalyst, not the long-term strategy",
   "Own your customer data — no algorithm changes can take it away",
