@@ -94,7 +94,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Biggest Challenge Right Now</label>
-                    <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm resize-none" placeholder="Tell us what's keeping you up at night..." />
+                    <textarea name="challenge" rows={4} className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm resize-none" placeholder="Tell us what's keeping you up at night..." />
                   </div>
                   <button
                     type="submit"
