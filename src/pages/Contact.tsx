@@ -5,10 +5,26 @@ import { Send, Phone, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    try {
+      await fetch("https://formsubmit.co/ajax/kalin_marinov@hotmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+      setSubmitted(true);
+    } catch {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -47,44 +63,45 @@ const Contact = () => {
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-semibold mb-2">Your Name *</label>
-                      <input required type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="John Smith" />
+                      <input required name="name" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="John Smith" />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold mb-2">Restaurant Name *</label>
-                      <input required type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="The Copper Pan" />
+                      <input required name="restaurant" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="The Copper Pan" />
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-semibold mb-2">Email *</label>
-                      <input required type="email" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="john@restaurant.com" />
+                      <input required name="email" type="email" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="john@restaurant.com" />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold mb-2">Phone</label>
-                      <input type="tel" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="(555) 123-4567" />
+                      <input name="phone" type="tel" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="(331) 234-5060" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Location / City</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Dallas, TX" />
+                    <input name="location" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Dallas, TX" />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Best Time to Reach You</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Mornings before 11am" />
+                    <input name="best_time" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Mornings before 11am" />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Current Monthly Covers (approx.)</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="e.g., 2,000" />
+                    <input name="monthly_covers" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="e.g., 2,000" />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Biggest Challenge Right Now</label>
-                    <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm resize-none" placeholder="Tell us what's keeping you up at night..." />
+                    <textarea name="challenge" rows={4} className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm resize-none" placeholder="Tell us what's keeping you up at night..." />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl disabled:opacity-50"
                   >
-                    Click here to get more repeat customers every month
+                    {isSubmitting ? "Sending..." : "Click here to get more repeat customers every month"}
                   </button>
                 </form>
               )}
@@ -109,7 +126,7 @@ const Contact = () => {
                   <Phone className="w-5 h-5 text-primary shrink-0" />
                   <div>
                     <p className="text-sm font-semibold">Call Us</p>
-                    <p className="text-sm text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-sm text-muted-foreground">(331) 234-5060</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
