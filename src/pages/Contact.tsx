@@ -86,7 +86,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Best Time to Reach You</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Mornings before 11am" />
+                    <input name="best_time" type="text" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Mornings before 11am" />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2">Current Monthly Covers (approx.)</label>
