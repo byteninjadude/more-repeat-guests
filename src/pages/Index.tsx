@@ -8,7 +8,6 @@ import IdealClientSection from "@/components/home/IdealClientSection";
 import PricingSection from "@/components/home/PricingSection";
 import FAQSection from "@/components/home/FAQSection";
 import CTASection from "@/components/home/CTASection";
-import SocialProofBar from "@/components/home/SocialProofBar";
 
 const Index = () => (
   <Layout>
@@ -17,7 +16,6 @@ const Index = () => (
     <HowItWorksSection />
     <ObjectionsSection />
     <ProofSection />
-    <SocialProofBar />
     <IdealClientSection />
     <PricingSection />
     <FAQSection />
