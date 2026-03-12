@@ -44,7 +44,7 @@ const About = () => (
             Most restaurant marketing is backwards. It focuses on getting attention — likes, views, impressions — instead of building something lasting. We take a different approach.
           </p>
           <p>
-            <strong className="text-foreground">One great first visit → relationship → repeat visits.</strong> That's the formula. The Birthday Free Entrée is the catalyst that gets guests through the door. But the real magic happens after — when you can reach those guests directly, month after month, bringing them back at full price.
+            <strong className="text-foreground">One great first visit → relationship → repeat visits.</strong> That's the formula. The Birthday Free Entrée is the catalyst that gets guests through the door. But the real magic happens after, when you can reach those guests directly, month after month, bringing them back at full price.
           </p>
           <p>
             We specialize exclusively in restaurants. We understand the margins, the staffing challenges, the slow nights, and the seasonal swings. Everything we build is designed for the real world of restaurant operations.
