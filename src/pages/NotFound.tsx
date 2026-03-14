@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <Helmet>
-        <title>Page Not Found — The Birthday Club</title>
+        <title>Page Not Found - The Birthday Club</title>
         <meta name="description" content="The page you're looking for doesn't exist." />
       </Helmet>
       <div className="text-center">

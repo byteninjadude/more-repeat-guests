@@ -31,9 +31,9 @@ const Contact = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Contact Us — The Birthday Club</title>
+        <title>Contact Us - The Birthday Club</title>
         <meta name="description" content="Fill out the form or call (331) 234-5060. No pressure, we'll map out a plan and tell you if it's a fit." />
-        <meta property="og:title" content="Contact Us — The Birthday Club" />
+        <meta property="og:title" content="Contact Us - The Birthday Club" />
         <meta property="og:description" content="Fill out the form or call (331) 234-5060. No pressure, we'll map out a plan and tell you if it's a fit." />
       </Helmet>
       <section className="py-20 lg:py-28">
