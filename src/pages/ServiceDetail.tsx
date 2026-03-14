@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
