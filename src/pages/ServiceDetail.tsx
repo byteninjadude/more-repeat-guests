@@ -115,6 +115,12 @@ const ServiceDetail = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{data.title} — The Birthday Club</title>
+        <meta name="description" content={data.meta} />
+        <meta property="og:title" content={`${data.title} — The Birthday Club`} />
+        <meta property="og:description" content={data.meta} />
+      </Helmet>
       {/* Hero */}
       <section className="py-20 lg:py-28 hero-gradient">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
