@@ -13,9 +13,9 @@ import CTASection from "@/components/home/CTASection";
 const Index = () => (
   <Layout>
     <Helmet>
-      <title>The Birthday Club — Turn Birthday Visitors Into Lifelong Regulars</title>
+      <title>The Birthday Club - Turn Birthday Visitors Into Lifelong Regulars</title>
       <meta name="description" content="We help restaurant owners build a customer list that drives repeat visits on demand using our proven Birthday Free Entrée system." />
-      <meta property="og:title" content="The Birthday Club — Turn Birthday Visitors Into Lifelong Regulars" />
+      <meta property="og:title" content="The Birthday Club - Turn Birthday Visitors Into Lifelong Regulars" />
       <meta property="og:description" content="We help restaurant owners build a customer list that drives repeat visits on demand using our proven Birthday Free Entrée system." />
     </Helmet>
     <HeroSection />

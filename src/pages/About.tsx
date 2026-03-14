@@ -14,9 +14,9 @@ const values = [
 const About = () => (
   <Layout>
     <Helmet>
-      <title>About Us — The Birthday Club</title>
+      <title>About Us - The Birthday Club</title>
       <meta name="description" content="We help restaurants stop gambling on unpredictable marketing and start building a customer list that drives repeat visits on demand." />
-      <meta property="og:title" content="About Us — The Birthday Club" />
+      <meta property="og:title" content="About Us - The Birthday Club" />
       <meta property="og:description" content="We help restaurants stop gambling on unpredictable marketing and start building a customer list that drives repeat visits on demand." />
     </Helmet>
     {/* Hero */}

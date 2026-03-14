@@ -116,9 +116,9 @@ const ServiceDetail = () => {
   return (
     <Layout>
       <Helmet>
-        <title>{data.title} — The Birthday Club</title>
+        <title>{data.title} - The Birthday Club</title>
         <meta name="description" content={data.meta} />
-        <meta property="og:title" content={`${data.title} — The Birthday Club`} />
+        <meta property="og:title" content={`${data.title} - The Birthday Club`} />
         <meta property="og:description" content={data.meta} />
       </Helmet>
       {/* Hero */}
