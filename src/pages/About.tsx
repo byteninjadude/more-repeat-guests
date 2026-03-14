@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -12,6 +13,12 @@ const values = [
 
 const About = () => (
   <Layout>
+    <Helmet>
+      <title>About Us — The Birthday Club</title>
+      <meta name="description" content="We help restaurants stop gambling on unpredictable marketing and start building a customer list that drives repeat visits on demand." />
+      <meta property="og:title" content="About Us — The Birthday Club" />
+      <meta property="og:description" content="We help restaurants stop gambling on unpredictable marketing and start building a customer list that drives repeat visits on demand." />
+    </Helmet>
     {/* Hero */}
     <section className="py-20 lg:py-28 hero-gradient">
       <div className="container mx-auto px-4 lg:px-8 max-w-4xl">

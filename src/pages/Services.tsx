@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -44,6 +45,12 @@ const services = [
 
 const Services = () => (
   <Layout>
+    <Helmet>
+      <title>Our Services — The Birthday Club</title>
+      <meta name="description" content="Everything you need to turn birthday visitors into lifelong regulars. Local ads, birthday funnels, list building, remarketing, and reporting." />
+      <meta property="og:title" content="Our Services — The Birthday Club" />
+      <meta property="og:description" content="Everything you need to turn birthday visitors into lifelong regulars. Local ads, birthday funnels, list building, remarketing, and reporting." />
+    </Helmet>
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.h1
